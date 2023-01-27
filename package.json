@@ -1,17 +1,23 @@
 {
-  "name": "movies-react",
+  "name": "birthday-card",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@fireworks-js/react": "^2.10.1",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
+    "firebase": "^9.16.0",
+    "fireworks-js": "^2.10.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
     "react-infinite-scroll-component": "^6.1.0",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
+    "sweetalert2": "^11.7.1",
+    "use-sound": "^4.0.1",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
@@ -32,10 +38,14 @@
       "not dead",
       "not op_mini all"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "development":  [
+      ">0.2%",
+     "not dead",
+     "not op_mini all"
+   ]
+    
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.20.13"
   }
 }

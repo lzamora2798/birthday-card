@@ -1,0 +1,96 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+@keyframes bounce {
+        0% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+  
+  30%{
+    transform: scale(1,0.8) translate(0px, 10px); 
+  }
+
+  75%{
+    transform: scale(1,1.1) translate(0px, -25px); 
+  }
+  
+ 100% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+}
+
+
+.title2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #acacac;
+}
+
+.title {
+  text-align: start;
+  font-size: 1.5rem;
+  color: #acacac;
+}
+
+.div1{
+  animation: moveX 1s ;
+}
+.checkbox{
+  position: relative;
+  display: flex;
+  left: -100px;
+  margin-top: 10%;
+}
+
+.checkbox2{
+  display: flex;
+  margin-top: 5%;
+  justify-content: center;
+}
+.checrow{
+  display: flex;
+  flex-direction: column;
+  margin-right: 25%;
+}
+
+@keyframes moveX {
+  0% {
+transform: translateX(-400%)
+}
+
+100% {
+transform: translateX(0%)
+}
+}
+
+.bounce {
+  text-align:center;
+  margin:0 auto;
+  margin-top:10%;
+  height:20px;
+  width:150px;
+  padding:20px;  
+  background:tomato;
+  border-radius: 100px;
+}
+
+img {
+  animation: 
+  moverR 1s 1s infinite alternate linear; 
+}
+
+@keyframes moverR {
+  
+  0%{
+    transform: rotate(-3deg);
+  }
+  100%{
+    transform: rotate(3deg);
+  }
+
+}

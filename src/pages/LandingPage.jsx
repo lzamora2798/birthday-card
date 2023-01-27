@@ -1,17 +1,18 @@
-import { useSearchParams } from "react-router-dom";
-import { MoviesGrid } from "../components/MoviesGrid";
-import { Search } from "../components/Search";
-import { useDebounce } from "../hooks/useDebounce";
-
+import styles from "./LandingPage.module.css";
+import {
+  Link
+} from "react-router-dom";
 export function LandingPage() {
-  const [query] = useSearchParams();
-  const search = query.get("search");
 
-  const debouncedSearch = useDebounce(search, 300);
   return (
     <div>
-      <Search />
-      <MoviesGrid key={debouncedSearch} search={debouncedSearch} />
+      <h1 className={styles.title}>Feliz Cumpleaños 25</h1>
+      <Link to="/presentacion">
+      <div className={styles.bounce}>
+          Click para continuar
+      </div>
+      </Link>
+      
     </div>
   );
 }
